@@ -6,4 +6,3 @@ README
 t/01pod.t
 t/02use.t
 t/03init.t
-t/04results.t
