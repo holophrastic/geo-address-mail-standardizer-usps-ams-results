@@ -6,7 +6,7 @@ with qw(MooseX::Storage::Deferred);
 
 =head1 NAME
 
-Geo::Address::Mail::Standardizer::USPS::AMS::Result
+Geo::Address::Mail::Standardizer::USPS::AMS::Results - results object from the USPS Address Matching System
 
 =head1 SYNOPSIS
 
@@ -41,7 +41,7 @@ extends 'Geo::Address::Mail::Standardizer::Results';
 use Geo::Address::Mail::US;
 use Moose::Util::TypeConstraints;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 subtype 'Address'		=> as 'Geo::Address::Mail::US';
 subtype 'AddressList'	=> as 'ArrayRef[Address]';
@@ -78,5 +78,25 @@ has '+standardized_address' =>
 	coerce	=> 1;
 
 __PACKAGE__->meta->make_immutable;
+
+
+=head1 AUTHOR
+
+Mike Eldridge <diz@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2010 Mike Eldridge
+
+=head1 LICENSE
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+
+=cut
+
 
 1;

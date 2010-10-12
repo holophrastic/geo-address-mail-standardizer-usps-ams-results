@@ -1,6 +1,6 @@
 ---
 name: Geo-Address-Mail-Standardizer-USPS-AMS-Results
-version: 0.02
+version: 0.03
 abstract: results object for address standardization using the United States Postal Service Address Matching System
 author:
     - Mike Eldridge <diz@cpan.org>
