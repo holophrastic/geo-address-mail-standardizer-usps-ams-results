@@ -1,6 +1,6 @@
 ---
 name: Geo-Address-Mail-Standardizer-USPS-AMS-Results
-version: 0.03
+version: 0.04
 abstract: results object for address standardization using the United States Postal Service Address Matching System
 author:
     - Mike Eldridge <diz@cpan.org>
@@ -14,6 +14,7 @@ requires:
   Geo::Address::Mail::Standardizer::Results: 0.01
   Geo::Address::Mail::US: 0.01
   Moose: 0.90
+  MooseX::Storage: 0.28
 no_index:
     directory:
         - t

@@ -41,7 +41,7 @@ extends 'Geo::Address::Mail::Standardizer::Results';
 use Geo::Address::Mail::US;
 use Moose::Util::TypeConstraints;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 subtype 'Address'		=> as 'Geo::Address::Mail::US';
 subtype 'AddressList'	=> as 'ArrayRef[Address]';
